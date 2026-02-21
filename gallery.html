@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="Md Mobasser Hosain — Photo gallery" />
+  <title>Gallery — Md Mobasser Hosain</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="header">
+    <div class="wrap header-inner">
+      <div class="title">
+        <a href="index.html#top" class="name">Md Mobasser Hosain</a>
+        <div class="subtitle">Cancer transcriptomics • Multi-omics ML/DL • Immunoinformatics vaccines • Drug design & discovery • Precision medicine & pharmacogenomics • AI & Bioinformatics • Diabetes Research • Regenerative medicine & stem cell</div>
+      </div>
+      <nav class="nav">
+        <a href="index.html" class="home">Home</a>
+        <a href="skills.html">Skills</a>
+        <a href="projects.html">Projects</a>
+        <a href="publications.html">Publications</a>
+        <a href="training.html">Research Training and Workshops</a>
+        <a href="academic_results.html">Academic Degrees and Results</a>
+        <a href="awards.html">Awards</a>
+        <a href="engagement.html">Extracurricular and Social Engagement</a>
+        <a href="certificates.html">Certificates</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html" class="btn">Contact</a>
+        <button class="btn ghost smallbtn" id="themeToggle" type="button">Theme</button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap layout">
+    <aside class="sidebar">
+      <div class="card profile">
+        <img class="avatar" src="assets/avatar.png" alt="Profile photo">
+        <div class="pname">Md Mobasser Hosain</div>
+        <div class="affil">Research Fellow, Computational Biotechnology & Bioinformatics Lab (UODA)</div>
+        <div class="meta">
+          <div><span>Email</span><a href="mailto:mobasserbge@gmail.com">mobasserbge@gmail.com</a></div>
+          <div><span>ORCID</span><a href="https://orcid.org/0009-0008-5118-1282" target="_blank" rel="noreferrer">0009-0008-5118-1282</a></div>
+          <div><span>Scholar</span><a href="https://scholar.google.com/citations?user=WmthFEQAAAAJ&hl=en&authuser=1" target="_blank" rel="noreferrer">Google Scholar</a></div>
+        </div>
+      </div>
+    </aside>
+
+    <section class="content">
+      <section class="card">
+        <h1>Gallery</h1>
+        <div class="muted">Lab, conference, training, and certificate photos. Use filters to quickly browse.</div>
+
+        <div class="filters" role="tablist" aria-label="Gallery filters">
+          <button class="fbtn active" data-filter="all" role="tab" aria-selected="true">All</button>
+          <button class="fbtn" data-filter="lab" role="tab">Lab</button>
+          <button class="fbtn" data-filter="conference" role="tab">Conference</button>
+          <button class="fbtn" data-filter="training" role="tab">Training</button>
+          <button class="fbtn" data-filter="certificates" role="tab">Certificates</button>
+        </div>
+
+        <div class="gallery-grid" id="galleryGrid">
+          <!-- Example items (replace images in assets/ and update src + captions). -->
+          <figure class="gcard" data-tags="training certificates">
+            <div class="gthumb placeholder"><div class="ph">Add photo</div></div>
+            <figcaption>
+              <div class="gcap">Certificate / Training</div>
+              <div class="gtags"><span>training</span><span>certificates</span></div>
+            </figcaption>
+          </figure>
+
+          <figure class="gcard" data-tags="lab">
+            <div class="gthumb placeholder"><div class="ph">Add photo</div></div>
+            <figcaption>
+              <div class="gcap">Lab / Bench work</div>
+              <div class="gtags"><span>lab</span></div>
+            </figcaption>
+          </figure>
+
+          <figure class="gcard" data-tags="conference">
+            <div class="gthumb placeholder"><div class="ph">Add photo</div></div>
+            <figcaption>
+              <div class="gcap">Conference / Event</div>
+              <div class="gtags"><span>conference</span></div>
+            </figcaption>
+          </figure>
+
+          <figure class="gcard" data-tags="training">
+            <div class="gthumb placeholder"><div class="ph">Add photo</div></div>
+            <figcaption>
+              <div class="gcap">Workshop / Training</div>
+              <div class="gtags"><span>training</span></div>
+            </figcaption>
+          </figure>
+
+          <figure class="gcard" data-tags="certificates">
+            <div class="gthumb placeholder"><div class="ph">Add photo</div></div>
+            <figcaption>
+              <div class="gcap">Certificate</div>
+              <div class="gtags"><span>certificates</span></div>
+            </figcaption>
+          </figure>
+
+          <figure class="gcard" data-tags="lab training">
+            <div class="gthumb placeholder"><div class="ph">Add photo</div></div>
+            <figcaption>
+              <div class="gcap">Lab + Training</div>
+              <div class="gtags"><span>lab</span><span>training</span></div>
+            </figcaption>
+          </figure>
+        </div>
+
+        <div class="muted small" style="margin-top:10px">
+          How to add photos: put images into <code>assets/</code> (e.g., <code>lab1.jpg</code>), then replace a placeholder by:
+          <code>&lt;div class="gthumb"&gt;&lt;img src="assets/lab1.jpg" alt="..."&gt;&lt;/div&gt;</code>
+          and set tags in <code>data-tags</code> (e.g., <code>data-tags="lab training"</code>).
+        </div>
+
+        <div style="margin-top:12px">
+          <a class="link" href="index.html#top">← Back to home</a>
+        </div>
+      </section>
+
+      
+  <script>
+    (function(){
+      const KEY = "mh_theme"; // "madae" | "google" | "scholar"
+      const btn = document.getElementById("themeToggle");
+      const THEMES = ["madae","google","scholar"];
+
+      function apply(t){
+        document.body.classList.toggle("theme-madae", t === "madae");
+        document.body.classList.toggle("theme-google", t === "google");
+        document.body.classList.toggle("theme-scholar", t === "scholar");
+        if(btn){
+          btn.textContent = (t === "madae") ? "Theme: Colour" : (t === "google") ? "Theme: Google" : "Theme: Scholar";
+        }
+      }
+
+      let saved = localStorage.getItem(KEY) || "madae";
+      if(!THEMES.includes(saved)) saved = "madae";
+      apply(saved);
+
+      if(btn){
+        btn.addEventListener("click", () => {
+          const cur = localStorage.getItem(KEY) || "madae";
+          const i = THEMES.indexOf(cur);
+          const next = THEMES[(i+1) % THEMES.length];
+          localStorage.setItem(KEY, next);
+          apply(next);
+        });
+      }
+    })();
+  </script>
+
+
+  <script>
+    (function(){
+      const links = Array.from(document.querySelectorAll(".nav a")).filter(a => a.getAttribute("href"));
+      const curPath = (location.pathname.split("/").pop() || "index.html").toLowerCase();
+      const curHash = (location.hash || "").toLowerCase();
+
+      function normalize(href){
+        try{
+          const u = new URL(href, location.href);
+          const path = (u.pathname.split("/").pop() || "index.html").toLowerCase();
+          const hash = (u.hash || "").toLowerCase();
+          return {path, hash};
+        }catch(e){
+          return {path: href.toLowerCase(), hash:""};
+        }
+      }
+
+      function setActive(){
+        links.forEach(a => a.classList.remove("active"));
+        // 1) exact page match
+        let matched = links.filter(a => normalize(a.getAttribute("href")).path === curPath);
+        // 2) if on index with hash, prefer link matching hash
+        if(curPath === "index.html" && curHash){
+          const hashMatch = links.filter(a => {
+            const n = normalize(a.getAttribute("href"));
+            return n.path === "index.html" && n.hash === curHash;
+          });
+          if(hashMatch.length) matched = hashMatch;
+        }
+        // 3) apply
+        matched.forEach(a => a.classList.add("active"));
+      }
+
+      window.addEventListener("hashchange", setActive);
+      setActive();
+    })();
+  </script>
+
+</body>
+</html>
